@@ -8,6 +8,7 @@ const bts = [
       ru: 'ё',
       en: '~',
     },
+    // values: { }
   },
   {
     contents: {
@@ -139,6 +140,7 @@ const bts = [
       en: 'Backspace',
     },
   },
+
   {
     contents: {
       ru: 'Tab',
@@ -519,6 +521,7 @@ const bts = [
       en: '>',
     },
   },
+
   {
     contents: {
       ru: '.',
@@ -529,6 +532,7 @@ const bts = [
       en: '?',
     },
   },
+
   {
     contents: {
       ru: ' △',
@@ -539,6 +543,7 @@ const bts = [
       en: ' △',
     },
   },
+
   {
     contents: {
       ru: 'Shift',
@@ -559,6 +564,18 @@ const bts = [
       en: 'Ctrl',
     },
   },
+
+  {
+    contents: {
+      ru: 'Win',
+      en: 'Win',
+    },
+    alts: {
+      ru: 'Win',
+      en: 'Win',
+    },
+  },
+
   {
     contents: {
       ru: 'Alt',
@@ -571,8 +588,8 @@ const bts = [
   },
   {
     contents: {
-      ru: ' ',
-      en: ' ',
+      ru: 'пробел',
+      en: 'space',
     },
     alts: {
       ru: '&nbsp;',
@@ -589,16 +606,7 @@ const bts = [
       en: 'Alt',
     },
   },
-  {
-    contents: {
-      ru: 'Ctrl',
-      en: 'Ctrl',
-    },
-    alts: {
-      ru: 'Ctrl',
-      en: 'Ctrl',
-    },
-  },
+
   {
     contents: {
       ru: '◁',
@@ -627,10 +635,19 @@ const bts = [
     alts: {
       ru: '▷',
       en: '▷',
+    },
+  },
+  {
+    contents: {
+      ru: 'Ctrl',
+      en: 'Ctrl',
+    },
+    alts: {
+      ru: 'Ctrl',
+      en: 'Ctrl',
     },
   },
 ];
-
 class AbstractForm {
   constructor(parent, tag, className) {
     this.element = document.createElement(tag);
@@ -639,7 +656,7 @@ class AbstractForm {
   }
 }
 class Form extends AbstractForm {
-  constructor(body, tag, className, textContent) {
+  constructor(body, tag, className, textContent,) {
     super(body, tag, className);
     this.element.textContent = textContent;
 
@@ -651,23 +668,49 @@ class Form extends AbstractForm {
 class WindowForm extends AbstractForm {
   constructor(body, tag, className, value = '') {
     super(body, tag, className, value);
-    this.element.innerHTML = value
+    this.element.innerHTML = value;
   }
 }
-
 function createKeyboard() {
-  new Form(document.body, 'div', 'container');
-  const boxBtn = new Form(document.body, 'div', 'box-btn');
-  const windows = new WindowForm(boxBtn.element, 'textarea', 'window');
+  const cont = new Form(document.body, 'div', 'container');
+  const windows = new WindowForm(cont.element, 'textarea', 'window');
+
+  const boxBtn = new Form(cont.element, 'div', 'box-btn');
   let btn;
   for (let i = 0; i < bts.length; i++) {
-    btn = new Form(boxBtn.element, 'button', 'btn', bts[i].contents.ru);
+    if (bts[i].contents.ru == 'пробел') {
+      btn = new Form(boxBtn.element, 'button', 'space', bts[i].contents.en);
+
+    } else if (bts[i].contents.ru == 'Caps Lock' || bts[i].contents.ru == 'Shift' || bts[i].contents.en == 'ENTER' || bts[i].contents.ru == 'Backspace' || bts[i].contents.ru == 'Tab') {
+      btn = new Form(boxBtn.element, 'button', 'caps', bts[i].contents.en);
+    } else {
+      btn = new Form(boxBtn.element, 'button', 'btn', bts[i].contents.en);
+
+    }
     btn.element.addEventListener('click', () => {
-      let text = `${bts[i].contents.ru}`
-      windows.element.innerHTML += text
+      const text = `${bts[i].contents.en}`;
+      if (bts[i].contents.ru == 'пробел') {
+        windows.element.innerHTML += ' ';
+
+      } else {
+        windows.element.innerHTML += text;
+
+      }
       console.log('createBtn');
-    })
+    });
   }
 }
+// else.target else.current.target value
+// else.key.code
 
-createKeyboard()
+// function styless() {
+//   for (let i = 0; i < bts.length; i++) {
+//     if (bts[i].contents.ru = 'пробел') {
+//       bts[i].style.overflow = ''
+
+//     }
+//   }
+//   styless()
+
+
+createKeyboard();
