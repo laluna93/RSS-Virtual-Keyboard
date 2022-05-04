@@ -2,662 +2,672 @@ const bts = [
   {
     contents: {
       ru: 'ё',
-      en: '`'
+      en: '`',
     },
     alts: {
       ru: 'ё',
-      en: '~'
+      en: '~',
     },
   },
   {
     contents: {
       ru: '1',
-      en: '1'
+      en: '1',
     },
     alts: {
       ru: '!',
-      en: '!'
+      en: '!',
     },
   },
   {
     contents: {
       ru: '2',
-      en: '2'
+      en: '2',
     },
     alts: {
       ru: '"',
-      en: '@'
+      en: '@',
     },
   },
   {
     contents: {
       ru: '3',
-      en: '3'
+      en: '3',
     },
     alts: {
       ru: '№',
-      en: '#'
+      en: '#',
     },
   },
   {
     contents: {
       ru: '4',
-      en: '4'
+      en: '4',
     },
     alts: {
       ru: ';',
-      en: '$'
+      en: '$',
     },
   },
   {
     contents: {
       ru: '5',
-      en: '5'
+      en: '5',
     },
     alts: {
       ru: '%',
-      en: '%'
+      en: '%',
     },
   },
   {
     contents: {
       ru: '6',
-      en: '6'
+      en: '6',
     },
     alts: {
       ru: ':',
-      en: '^'
+      en: '^',
     },
   },
   {
     contents: {
       ru: '7',
-      en: '7'
+      en: '7',
     },
     alts: {
       ru: '?',
-      en: '&'
+      en: '&',
     },
   },
   {
     contents: {
       ru: '8',
-      en: '8'
+      en: '8',
     },
     alts: {
       ru: '*',
-      en: '*'
+      en: '*',
     },
   },
   {
     contents: {
       ru: '9',
-      en: '9'
+      en: '9',
     },
     alts: {
       ru: '(',
-      en: '('
+      en: '(',
     },
   },
   {
     contents: {
       ru: '0',
-      en: '0'
+      en: '0',
     },
     alts: {
       ru: ')',
-      en: ')'
+      en: ')',
     },
   },
   {
     contents: {
       ru: '-',
-      en: '-'
+      en: '-',
     },
     alts: {
       ru: '_',
-      en: '_'
+      en: '_',
     },
   },
   {
     contents: {
       ru: '=',
-      en: '='
+      en: '=',
     },
     alts: {
       ru: '+',
-      en: '+'
+      en: '+',
     },
   },
   {
     contents: {
       ru: 'Backspace',
-      en: 'Backspace'
+      en: 'Backspace',
     },
     alts: {
       ru: 'Backspace',
-      en: 'Backspace'
+      en: 'Backspace',
     },
   },
   {
     contents: {
       ru: 'Tab',
-      en: 'Tab'
+      en: 'Tab',
     },
     alts: {
       ru: 'Tab',
-      en: 'Tab'
+      en: 'Tab',
     },
   },
   {
     contents: {
       ru: 'й',
-      en: 'q'
+      en: 'q',
     },
     alts: {
       ru: 'й',
-      en: 'q'
+      en: 'q',
     },
   },
   {
     contents: {
       ru: 'ц',
-      en: 'w'
+      en: 'w',
     },
     alts: {
       ru: 'ц',
-      en: 'w'
+      en: 'w',
     },
   },
   {
     contents: {
       ru: 'у',
-      en: 'e'
+      en: 'e',
     },
     alts: {
       ru: 'у',
-      en: 'e'
+      en: 'e',
     },
   },
   {
     contents: {
       ru: 'к',
-      en: 'r'
+      en: 'r',
     },
     alts: {
       ru: 'к',
-      en: 'r'
+      en: 'r',
     },
   },
   {
     contents: {
       ru: 'е',
-      en: 't'
+      en: 't',
     },
     alts: {
       ru: 'е',
-      en: 't'
+      en: 't',
     },
   },
   {
     contents: {
       ru: 'н',
-      en: 'y'
+      en: 'y',
     },
     alts: {
       ru: 'н',
-      en: 'y'
+      en: 'y',
     },
   },
   {
     contents: {
       ru: 'г',
-      en: 'u'
+      en: 'u',
     },
     alts: {
       ru: 'г',
-      en: 'u'
+      en: 'u',
     },
   },
   {
     contents: {
       ru: 'ш',
-      en: 'i'
+      en: 'i',
     },
     alts: {
       ru: 'ш',
-      en: 'i'
+      en: 'i',
     },
   },
   {
     contents: {
       ru: 'щ',
-      en: 'o'
+      en: 'o',
     },
     alts: {
       ru: 'щ',
-      en: 'o'
+      en: 'o',
     },
   },
   {
     contents: {
       ru: 'з',
-      en: 'p'
+      en: 'p',
     },
     alts: {
       ru: 'з',
-      en: 'p'
+      en: 'p',
     },
   },
   {
     contents: {
       ru: 'х',
-      en: '['
+      en: '[',
     },
     alts: {
       ru: 'х',
-      en: '{'
+      en: '{',
     },
   },
   {
     contents: {
       ru: 'ъ',
-      en: ']'
+      en: ']',
     },
     alts: {
       ru: 'ъ',
-      en: '}'
+      en: '}',
     },
   },
   {
     contents: {
       ru: '\\',
-      en: '\\'
+      en: '\\',
     },
     alts: {
       ru: '/',
-      en: '|'
+      en: '|',
     },
   },
   {
     contents: {
       ru: 'DEL',
-      en: 'DEL'
+      en: 'DEL',
     },
     alts: {
       ru: 'DEL',
-      en: 'DEL'
+      en: 'DEL',
     },
   },
   {
     contents: {
       ru: 'Caps Lock',
-      en: 'Caps Lock'
+      en: 'Caps Lock',
     },
     alts: {
       ru: 'Caps Lock',
-      en: 'Caps Lock'
+      en: 'Caps Lock',
     },
   },
   {
     contents: {
       ru: 'ф',
-      en: 'a'
+      en: 'a',
     },
     alts: {
       ru: 'ф',
-      en: 'a'
+      en: 'a',
     },
   },
   {
     contents: {
       ru: 'ы',
-      en: 's'
+      en: 's',
     },
     alts: {
       ru: 'ы',
-      en: 's'
+      en: 's',
     },
   },
   {
     contents: {
       ru: 'в',
-      en: 'd'
+      en: 'd',
     },
     alts: {
       ru: 'в',
-      en: 'd'
+      en: 'd',
     },
   },
   {
     contents: {
       ru: 'а',
-      en: 'f'
+      en: 'f',
     },
     alts: {
       ru: 'а',
-      en: 'f'
+      en: 'f',
     },
   },
   {
     contents: {
       ru: 'п',
-      en: 'g'
+      en: 'g',
     },
     alts: {
       ru: 'п',
-      en: 'g'
+      en: 'g',
     },
   },
   {
     contents: {
       ru: 'р',
-      en: 'h'
+      en: 'h',
     },
     alts: {
       ru: 'р',
-      en: 'h'
+      en: 'h',
     },
   },
   {
     contents: {
       ru: 'о',
-      en: 'j'
+      en: 'j',
     },
     alts: {
       ru: 'о',
-      en: 'j'
+      en: 'j',
     },
   },
   {
     contents: {
       ru: 'л',
-      en: 'k'
+      en: 'k',
     },
     alts: {
       ru: 'л',
-      en: 'k'
+      en: 'k',
     },
   },
   {
     contents: {
       ru: 'д',
-      en: 'l'
+      en: 'l',
     },
     alts: {
       ru: 'д',
-      en: 'l'
+      en: 'l',
     },
   },
   {
     contents: {
       ru: 'ж',
-      en: ';'
+      en: ';',
     },
     alts: {
       ru: 'ж',
-      en: ':'
+      en: ':',
     },
   },
   {
     contents: {
       ru: 'э',
-      en: '\''
+      en: '\'',
     },
     alts: {
       ru: 'э',
-      en: '"'
+      en: '"',
     },
   },
   {
     contents: {
       ru: 'ENTER',
-      en: 'ENTER'
+      en: 'ENTER',
     },
     alts: {
       ru: 'ENTER',
-      en: 'ENTER'
+      en: 'ENTER',
     },
   },
   {
     contents: {
       ru: 'Shift',
-      en: 'Shift'
+      en: 'Shift',
     },
     alts: {
       ru: 'Shift',
-      en: 'Shift'
+      en: 'Shift',
     },
   },
   {
     contents: {
       ru: 'я',
-      en: 'z'
+      en: 'z',
     },
     alts: {
       ru: 'я',
-      en: 'z'
+      en: 'z',
     },
   },
   {
     contents: {
       ru: 'ч',
-      en: 'x'
+      en: 'x',
     },
     alts: {
       ru: 'ч',
-      en: 'x'
+      en: 'x',
     },
   },
   {
     contents: {
       ru: 'с',
-      en: 'c'
+      en: 'c',
     },
     alts: {
       ru: 'с',
-      en: 'c'
+      en: 'c',
     },
   },
   {
     contents: {
       ru: 'м',
-      en: 'v'
+      en: 'v',
     },
     alts: {
       ru: 'м',
-      en: 'v'
+      en: 'v',
     },
   },
   {
     contents: {
       ru: 'и',
-      en: 'b'
+      en: 'b',
     },
     alts: {
       ru: 'и',
-      en: 'b'
+      en: 'b',
     },
   },
   {
     contents: {
       ru: 'т',
-      en: 'n'
+      en: 'n',
     },
     alts: {
       ru: 'т',
-      en: 'n'
+      en: 'n',
     },
   },
   {
     contents: {
       ru: 'ь',
-      en: 'm'
+      en: 'm',
     },
     alts: {
       ru: 'ь',
-      en: 'm'
+      en: 'm',
     },
   },
   {
     contents: {
       ru: 'б',
-      en: ','
+      en: ',',
     },
     alts: {
       ru: 'б',
-      en: '<'
+      en: '<',
     },
   },
   {
     contents: {
       ru: 'ю',
-      en: '.'
+      en: '.',
     },
     alts: {
       ru: 'ю',
-      en: '>'
+      en: '>',
     },
   },
   {
     contents: {
       ru: '.',
-      en: '/'
+      en: '/',
     },
     alts: {
       ru: ',',
-      en: '?'
+      en: '?',
     },
   },
   {
     contents: {
       ru: ' △',
-      en: ' △'
+      en: ' △',
     },
     alts: {
       ru: ' △',
-      en: ' △'
+      en: ' △',
     },
   },
   {
     contents: {
       ru: 'Shift',
-      en: 'Shift'
+      en: 'Shift',
     },
     alts: {
       ru: 'Shift',
-      en: 'Shift'
+      en: 'Shift',
     },
   },
   {
     contents: {
       ru: 'Ctrl',
-      en: 'Ctrl'
+      en: 'Ctrl',
     },
     alts: {
       ru: 'Ctrl',
-      en: 'Ctrl'
+      en: 'Ctrl',
     },
   },
   {
     contents: {
       ru: 'Alt',
-      en: 'Alt'
+      en: 'Alt',
     },
     alts: {
       ru: 'Alt',
-      en: 'Alt'
+      en: 'Alt',
     },
   },
   {
     contents: {
-      ru: 'Пробел',
-      en: 'Space'
+      ru: ' ',
+      en: ' ',
     },
     alts: {
       ru: '&nbsp;',
-      en: '&nbsp;'
+      en: '&nbsp;',
     },
   },
   {
     contents: {
       ru: 'Alt',
-      en: 'Alt'
+      en: 'Alt',
     },
     alts: {
       ru: 'Alt',
-      en: 'Alt'
+      en: 'Alt',
     },
   },
   {
     contents: {
       ru: 'Ctrl',
-      en: 'Ctrl'
+      en: 'Ctrl',
     },
     alts: {
       ru: 'Ctrl',
-      en: 'Ctrl'
+      en: 'Ctrl',
     },
   },
   {
     contents: {
       ru: '◁',
-      en: '◁'
+      en: '◁',
     },
     alts: {
       ru: '◁',
-      en: '◁'
+      en: '◁',
     },
   },
   {
     contents: {
       ru: '▽',
-      en: '▽'
+      en: '▽',
     },
     alts: {
       ru: '▽',
-      en: '▽'
+      en: '▽',
     },
   },
   {
     contents: {
       ru: '▷',
-      en: '▷'
+      en: '▷',
     },
     alts: {
       ru: '▷',
-      en: '▷'
+      en: '▷',
     },
   },
 ];
 
 class AbstractForm {
-  constructor(parent, tag, className, textContent) {
+  constructor(parent, tag, className) {
     this.element = document.createElement(tag);
     this.element.className = className;
-    this.element.textContent = textContent;
     parent.append(this.element);
-
   }
 }
 class Form extends AbstractForm {
   constructor(body, tag, className, textContent) {
-    super(body, tag, className, textContent);
+    super(body, tag, className);
+    this.element.textContent = textContent;
+
     this.element.addEventListener('click', () => {
-      console.log(textContent)
+      console.log(textContent);
+    });
+  }
+}
+class WindowForm extends AbstractForm {
+  constructor(body, tag, className, value = '') {
+    super(body, tag, className, value);
+    this.element.innerHTML = value
+  }
+}
+
+function createKeyboard() {
+  new Form(document.body, 'div', 'container');
+  const boxBtn = new Form(document.body, 'div', 'box-btn');
+  const windows = new WindowForm(boxBtn.element, 'textarea', 'window');
+  let btn;
+  for (let i = 0; i < bts.length; i++) {
+    btn = new Form(boxBtn.element, 'button', 'btn', bts[i].contents.ru);
+    btn.element.addEventListener('click', () => {
+      let text = `${bts[i].contents.ru}`
+      windows.element.innerHTML += text
+      console.log('createBtn');
     })
   }
 }
-const container = new Form(document.body, 'div', 'container');
-const boxBtn = new Form(document.body, 'div', 'box-btn');
-const windows = new Form(boxBtn.element, 'div', 'window');
-let btn
 
-function createBtn() {
-  for (let i = 0; i < bts.length; i++) {
-    btn = new Form(boxBtn.element, 'button', 'btn', bts[i].contents.ru);
-  }
-}
-
-
-createBtn()
+createKeyboard()
