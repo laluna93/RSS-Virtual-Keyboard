@@ -1,5 +1,6 @@
 const bts = [
   {
+    type: 'input',
     contents: {
       ru: 'ё',
       en: '`',
@@ -12,6 +13,7 @@ const bts = [
   },
 
   {
+    type: 'input',
     contents: {
       ru: '1',
       en: '1',
@@ -24,6 +26,7 @@ const bts = [
   },
 
   {
+    type: 'input',
     contents: {
       ru: '2',
       en: '2',
@@ -36,6 +39,7 @@ const bts = [
   },
 
   {
+    type: 'input',
     contents: {
       ru: '3',
       en: '3',
@@ -48,6 +52,7 @@ const bts = [
   },
 
   {
+    type: 'input',
     contents: {
       ru: '4',
       en: '4',
@@ -60,6 +65,7 @@ const bts = [
   },
 
   {
+    type: 'input',
     contents: {
       ru: '5',
       en: '5',
@@ -72,6 +78,7 @@ const bts = [
   },
 
   {
+    type: 'input',
     contents: {
       ru: '6',
       en: '6',
@@ -84,6 +91,7 @@ const bts = [
   },
 
   {
+    type: 'input',
     contents: {
       ru: '7',
       en: '7',
@@ -96,6 +104,7 @@ const bts = [
   },
 
   {
+    type: 'input',
     contents: {
       ru: '8',
       en: '8',
@@ -108,6 +117,7 @@ const bts = [
   },
 
   {
+    type: 'input',
     contents: {
       ru: '9',
       en: '9',
@@ -120,6 +130,7 @@ const bts = [
   },
 
   {
+    type: 'input',
     contents: {
       ru: '0',
       en: '0',
@@ -132,6 +143,7 @@ const bts = [
   },
 
   {
+    type: 'input',
     contents: {
       ru: '-',
       en: '-',
@@ -144,6 +156,7 @@ const bts = [
   },
 
   {
+    type: 'input',
     contents: {
       ru: '=',
       en: '=',
@@ -156,6 +169,8 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '',
     contents: {
       ru: 'Backspace',
       en: 'Backspace',
@@ -168,6 +183,8 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '',
     contents: {
       ru: 'Tab',
       en: 'Tab',
@@ -180,6 +197,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'й',
       en: 'q',
@@ -192,6 +211,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'ц',
       en: 'w',
@@ -204,6 +225,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'у',
       en: 'e',
@@ -216,6 +239,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'к',
       en: 'r',
@@ -228,6 +253,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'е',
       en: 't',
@@ -240,6 +267,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'н',
       en: 'y',
@@ -252,6 +281,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'г',
       en: 'u',
@@ -264,6 +295,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'ш',
       en: 'i',
@@ -276,6 +309,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'щ',
       en: 'o',
@@ -288,6 +323,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'з',
       en: 'p',
@@ -300,6 +337,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'х',
       en: '[',
@@ -312,6 +351,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'ъ',
       en: ']',
@@ -324,6 +365,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: '\\',
       en: '\\',
@@ -336,6 +379,8 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '',
     contents: {
       ru: 'DEL',
       en: 'DEL',
@@ -348,6 +393,8 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '',
     contents: {
       ru: 'Caps Lock',
       en: 'Caps Lock',
@@ -360,6 +407,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'ф',
       en: 'a',
@@ -372,6 +421,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'ы',
       en: 's',
@@ -384,6 +435,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'в',
       en: 'd',
@@ -396,6 +449,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'а',
       en: 'f',
@@ -408,6 +463,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'п',
       en: 'g',
@@ -420,6 +477,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'р',
       en: 'h',
@@ -432,6 +491,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'о',
       en: 'j',
@@ -444,6 +505,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'л',
       en: 'k',
@@ -456,6 +519,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'д',
       en: 'l',
@@ -468,6 +533,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'ж',
       en: ';',
@@ -480,6 +547,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'э',
       en: '\'',
@@ -492,6 +561,8 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '\n',
     contents: {
       ru: 'ENTER',
       en: 'ENTER',
@@ -504,6 +575,8 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '',
     contents: {
       ru: 'Shift',
       en: 'Shift',
@@ -516,6 +589,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'я',
       en: 'z',
@@ -528,6 +603,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'ч',
       en: 'x',
@@ -540,6 +617,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'с',
       en: 'c',
@@ -552,6 +631,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'м',
       en: 'v',
@@ -564,6 +645,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'и',
       en: 'b',
@@ -576,6 +659,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'т',
       en: 'n',
@@ -588,6 +673,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'ь',
       en: 'm',
@@ -600,6 +687,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'б',
       en: ',',
@@ -612,6 +701,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: 'ю',
       en: '.',
@@ -624,6 +715,8 @@ const bts = [
   },
 
   {
+    type: 'input',
+
     contents: {
       ru: '.',
       en: '/',
@@ -636,6 +729,8 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '',
     contents: {
       ru: ' △',
       en: ' △',
@@ -648,6 +743,8 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '',
     contents: {
       ru: 'Shift',
       en: 'Shift',
@@ -660,6 +757,9 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '',
+
     contents: {
       ru: 'Ctrl',
       en: 'Ctrl',
@@ -672,6 +772,9 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '',
+
     contents: {
       ru: 'Win',
       en: 'Win',
@@ -684,6 +787,9 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '',
+
     contents: {
       ru: 'Alt',
       en: 'Alt',
@@ -696,6 +802,8 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: ' ',
     contents: {
       ru: 'пробел',
       en: 'space',
@@ -708,6 +816,9 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '',
+
     contents: {
       ru: 'Alt',
       en: 'Alt',
@@ -720,6 +831,9 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '',
+
     contents: {
       ru: '◁',
       en: '◁',
@@ -732,6 +846,9 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '',
+
     contents: {
       ru: '▽',
       en: '▽',
@@ -744,6 +861,9 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '',
+
     contents: {
       ru: '▷',
       en: '▷',
@@ -756,6 +876,9 @@ const bts = [
   },
 
   {
+    type: 'noInput',
+    contentInput: '',
+
     contents: {
       ru: 'Ctrl',
       en: 'Ctrl',

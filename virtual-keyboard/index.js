@@ -2,31 +2,34 @@ import Form from './forms.js';
 import bts from './object.js';
 import WindowForm from './window.js';
 
+let currentLang = 'ru'
 
 
-function createKeyboard() {
+
+function ruCreate() {
   const cont = new Form(document.body, 'div', 'container');
   const windows = new WindowForm(cont.element, 'textarea', 'window');
   const boxBtn = new Form(cont.element, 'div', 'box-btn');
   for (let i = 0; i < bts.length; i += 1) {
     let btn;
-    if (bts[i].contents.ru === 'пробел') {
-      btn = new Form(boxBtn.element, 'button', 'space', bts[i].contents.en = '');
-    } else if (bts[i].contents.ru === 'Caps Lock' || bts[i].contents.ru == 'Shift' || bts[i].contents.en == 'ENTER' || bts[i].contents.ru == 'Backspace' || bts[i].contents.ru == 'Tab') {
-      btn = new Form(boxBtn.element, 'button', 'caps', bts[i].contents.en);
+    if (bts[i].contents[currentLang] === 'пробел') {
+      btn = new Form(boxBtn.element, 'button', 'space', bts[i].contents[currentLang] = '');
+    } else if (bts[i].contents[currentLang] === 'Caps Lock' || bts[i].contents[currentLang] == 'Shift' || bts[i].contents[currentLang] == 'ENTER' || bts[i].contents[currentLang] == 'Backspace' || bts[i].contents[currentLang] == 'Tab') {
+      btn = new Form(boxBtn.element, 'button', 'caps', bts[i].contents[currentLang]);
     } else {
-      btn = new Form(boxBtn.element, 'button', 'btn', bts[i].contents.en);
+      btn = new Form(boxBtn.element, 'button', 'btn', bts[i].contents[currentLang]);
     }
     document.addEventListener('keydown', (e) => {
       if (e.code === bts[i].values) {
-        const text = `${bts[i].contents.en}`;
-        if (bts[i].contents.ru === 'пробел') {
-          windows.element.innerHTML += ' ';
-        } else if (bts[i].contents.ru === 'ENTER') {
-          windows.element.innerHTML += '\n ';
+        let text = ''
+        if (bts[i].type == 'noInput') {
+          text = `${bts[i].contentInput}`
+          console.log('13')
         } else {
-          windows.element.innerHTML += text;
+          text = `${bts[i].contents[currentLang]}`
         }
+        windows.element.innerHTML += text;
+
         btn.element.style.background = '#00ff0d';
         btn.element.style.color = '#0b055f';
       }
@@ -38,16 +41,16 @@ function createKeyboard() {
       }
     });
     btn.element.addEventListener('click', () => {
-      const text = `${bts[i].contents.en}`;
-      if (bts[i].contents.ru === 'пробел') {
-        windows.element.innerHTML += ' ';
-      } else if (bts[i].contents.ru === 'ENTER') {
-        windows.element.innerHTML += '\n ';
+      let text = ''
+      if (bts[i].type == 'noInput') {
+        text = `${bts[i].contentInput}`
+        console.log('13')
       } else {
-        windows.element.innerHTML += text;
+        text = `${bts[i].contents[currentLang]}`
       }
+      windows.element.innerHTML += text;
     });
   }
 }
+ruCreate()
 
-createKeyboard();
