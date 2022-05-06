@@ -1,4 +1,5 @@
-const bts = [
+
+export const bts = [
   {
     type: 'input',
     contents: {
@@ -874,7 +875,6 @@ const bts = [
     },
     values: 'ArrowRight',
   },
-
   {
     type: 'noInput',
     contentInput: '',
@@ -891,4 +891,4 @@ const bts = [
   },
 ];
 
-export default bts;
+

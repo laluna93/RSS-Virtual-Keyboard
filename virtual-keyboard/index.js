@@ -1,56 +1,41 @@
-import Form from './forms.js';
-import bts from './object.js';
-import WindowForm from './window.js';
+import Form from './formsBtn.js';
+import AbstractForm from './classParent.js';
+import { bts } from './object.js';
+import WindowForm, { windows } from './window.js';
+import Container, { containers } from './container.js';
+// import Btns from './btn.js'
+import formsBtn, { boxBtn } from './formsBtn.js';
+import { ruCreate } from './btn.js';
+// import Btns from './btn.js'
 
-let currentLang = 'ru'
+// let currentLang = 'ru'
 
+// new Btns(boxBtn.element)
 
-
-function ruCreate() {
-  const cont = new Form(document.body, 'div', 'container');
-  const windows = new WindowForm(cont.element, 'textarea', 'window');
-  const boxBtn = new Form(cont.element, 'div', 'box-btn');
-  for (let i = 0; i < bts.length; i += 1) {
-    let btn;
-    if (bts[i].contents[currentLang] === 'пробел') {
-      btn = new Form(boxBtn.element, 'button', 'space', bts[i].contents[currentLang] = '');
-    } else if (bts[i].contents[currentLang] === 'Caps Lock' || bts[i].contents[currentLang] == 'Shift' || bts[i].contents[currentLang] == 'ENTER' || bts[i].contents[currentLang] == 'Backspace' || bts[i].contents[currentLang] == 'Tab') {
-      btn = new Form(boxBtn.element, 'button', 'caps', bts[i].contents[currentLang]);
-    } else {
-      btn = new Form(boxBtn.element, 'button', 'btn', bts[i].contents[currentLang]);
+export default class Btns extends AbstractForm {
+  constructor(body, className, textContent) {
+    super(body, 'div', className);
+    this.element.textContent = textContent;
+    this.element.onclick = () => {
+      this.onClick()
     }
-    document.addEventListener('keydown', (e) => {
-      if (e.code === bts[i].values) {
-        let text = ''
-        if (bts[i].type == 'noInput') {
-          text = `${bts[i].contentInput}`
-          console.log('13')
-        } else {
-          text = `${bts[i].contents[currentLang]}`
-        }
-        windows.element.innerHTML += text;
-
-        btn.element.style.background = '#00ff0d';
-        btn.element.style.color = '#0b055f';
-      }
-    });
-    document.addEventListener('keyup', (e) => {
-      if (e.code === bts[i].values) {
-        btn.element.style.background = '';
-        btn.element.style.color = '';
-      }
-    });
-    btn.element.addEventListener('click', () => {
-      let text = ''
-      if (bts[i].type == 'noInput') {
-        text = `${bts[i].contentInput}`
-        console.log('13')
-      } else {
-        text = `${bts[i].contents[currentLang]}`
-      }
-      windows.element.innerHTML += text;
-    });
   }
 }
-ruCreate()
+const langs = ['en', 'ru']
+
+function createKeys(langIndex) {
+  const destroyKeys = ruCreate(bts, windows, langs[langIndex], (combo) => {
+    console.log(destroyKeys)
+    if (combo['AltLeft'] == true && combo['ShiftLeft'] == true) {
+
+      destroyKeys()
+      createKeys((langIndex + 1) % langs.length)
+    }
+    if (combo['Caps Lock']) {
+      console.log('1')
+    }
+  })
+}
+createKeys(0)
+
 
