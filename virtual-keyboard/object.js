@@ -1,5 +1,19 @@
-
 export const bts = [
+  {
+    type: 'noInput',
+    contentInput: '',
+
+    contents: {
+      ru: 'lang',
+      en: 'lang',
+    },
+    alts: {
+      ru: 'lang',
+      en: 'lang',
+    },
+    values: 'lang',
+  },
+
   {
     type: 'input',
     contents: {
@@ -9,6 +23,10 @@ export const bts = [
     alts: {
       ru: 'ё',
       en: '~',
+    },
+    caps: {
+      ru: 'Ё',
+      en: '`',
     },
     values: 'Backquote',
   },
@@ -23,6 +41,7 @@ export const bts = [
       ru: '!',
       en: '!',
     },
+
     values: 'Digit1',
   },
 
@@ -565,12 +584,12 @@ export const bts = [
     type: 'noInput',
     contentInput: '\n',
     contents: {
-      ru: 'ENTER',
-      en: 'ENTER',
+      ru: 'Enter',
+      en: 'Enter',
     },
     alts: {
-      ru: 'ENTER',
-      en: 'ENTER',
+      ru: 'Enter',
+      en: 'Enter',
     },
     values: 'Enter',
   },
@@ -730,15 +749,15 @@ export const bts = [
   },
 
   {
-    type: 'noInput',
-    contentInput: '',
+    type: 'input',
+    // contentInput: '',
     contents: {
-      ru: ' △',
-      en: ' △',
+      ru: '△',
+      en: '△',
     },
     alts: {
-      ru: ' △',
-      en: ' △',
+      ru: '△',
+      en: '△',
     },
     values: 'ArrowUp',
   },
@@ -760,7 +779,6 @@ export const bts = [
   {
     type: 'noInput',
     contentInput: '',
-
     contents: {
       ru: 'Ctrl',
       en: 'Ctrl',
@@ -832,8 +850,8 @@ export const bts = [
   },
 
   {
-    type: 'noInput',
-    contentInput: '',
+    type: 'input',
+    // contentInput: '',
 
     contents: {
       ru: '◁',
@@ -847,8 +865,8 @@ export const bts = [
   },
 
   {
-    type: 'noInput',
-    contentInput: '',
+    type: 'input',
+    // contentInput: '',
 
     contents: {
       ru: '▽',
@@ -862,8 +880,8 @@ export const bts = [
   },
 
   {
-    type: 'noInput',
-    contentInput: '',
+    type: 'input',
+    // contentInput: '',
 
     contents: {
       ru: '▷',
@@ -890,5 +908,4 @@ export const bts = [
     values: 'ControlRight',
   },
 ];
-
-
+export default bts;

@@ -1,41 +1,27 @@
-import Form from './formsBtn.js';
-import AbstractForm from './classParent.js';
+// import Form from './formsBtn.js';
 import { bts } from './object.js';
-import WindowForm, { windows } from './window.js';
-import Container, { containers } from './container.js';
-// import Btns from './btn.js'
-import formsBtn, { boxBtn } from './formsBtn.js';
-import { ruCreate } from './btn.js';
-// import Btns from './btn.js'
+import ruCreate from './btn.js';
 
-// let currentLang = 'ru'
-
-// new Btns(boxBtn.element)
-
-export default class Btns extends AbstractForm {
-  constructor(body, className, textContent) {
-    super(body, 'div', className);
-    this.element.textContent = textContent;
-    this.element.onclick = () => {
-      this.onClick()
-    }
-  }
+let currentLang = localStorage.getItem('res') || 'ru';
+function saveLang() {
+  localStorage.setItem('res', currentLang);
 }
-const langs = ['en', 'ru']
+window.addEventListener('beforeunload', saveLang);
 
-function createKeys(langIndex) {
-  const destroyKeys = ruCreate(bts, windows, langs[langIndex], (combo) => {
-    console.log(destroyKeys)
-    if (combo['AltLeft'] == true && combo['ShiftLeft'] == true) {
+function createKeys() {
+  const destroyKeys = ruCreate(bts, currentLang, (combo) => {
+    const oneResult = combo.AltLeft && combo.ShiftLeft;
+    const twoResult = combo.AltRight && combo.ShiftRight;
 
-      destroyKeys()
-      createKeys((langIndex + 1) % langs.length)
+    if (oneResult || twoResult || combo.lang) {
+      destroyKeys();
+      if (currentLang === 'ru') {
+        currentLang = 'en';
+      } else {
+        currentLang = 'ru';
+      }
+      createKeys();
     }
-    if (combo['Caps Lock']) {
-      console.log('1')
-    }
-  })
+  });
 }
-createKeys(0)
-
-
+createKeys();

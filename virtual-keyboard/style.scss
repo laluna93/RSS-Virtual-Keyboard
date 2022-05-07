@@ -83,6 +83,9 @@ color: #0b055f
   height: 50px;
   border-radius: 100px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover{
   background-color: rgb(242, 255, 0);
 
@@ -98,6 +101,9 @@ color: #0b055f
   font-family: Georgia, 'Times New Roman', Times, serif;
   border-radius: 100px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover{
     background-color: rgb(242, 255, 0);
   }
@@ -107,4 +113,21 @@ color: #0b055f
 background: #fbff00;
 border: 2px solid #fbff00;
 color: #0b055f;
+}
+
+.lang{
+  border-radius: 100px;
+  background-color:#50ee11;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  &:hover{
+  background-color:#fff30d;
+
+  }
 }

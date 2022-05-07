@@ -4,7 +4,8 @@ export default class AbstractForm {
     this.element.className = className;
     parent.append(this.element);
   }
+
   destroy() {
-    this.element.remove()
+    this.element.remove();
   }
 }

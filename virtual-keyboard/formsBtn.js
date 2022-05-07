@@ -1,5 +1,5 @@
 import AbstractForm from './classParent.js';
-import Container, { containers } from './container.js';
+import { containers } from './container.js';
 
 export default class Form extends AbstractForm {
   constructor(body) {
@@ -8,4 +8,3 @@ export default class Form extends AbstractForm {
 }
 
 export const boxBtn = new Form(containers.element);
-
