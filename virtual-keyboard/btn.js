@@ -89,6 +89,12 @@ export default function ruCreate(bts, currentLang, onCombo) {
       if (names === 'lang') {
         return '';
       }
+      if (names === 'Ctrl' || names === 'Win') {
+        return '';
+      }
+      if (name === 'Для переключения языка используйте комбинацию клавиш Shift + Alt или кнопку "lang"') {
+        return '';
+      }
       if (names === 'ArrowUp' || names === 'ArrowLeft' || names === 'ArrowRight' || names === 'ArrowDown') {
         return data.contents[currentLang];
       }
@@ -107,11 +113,8 @@ export default function ruCreate(bts, currentLang, onCombo) {
         if (data.values === 'Enter') {
           windows.element.innerHTML += '\n';
         }
-        if (data.values === 'Enter') {
-          windows.element.innerHTML += '\n';
-        }
-        if (data.values === 'ControlLeft' || data.values === 'ControlRight') {
-          windows.element.innerHTML = '';
+        if (data.values === 'Tab') {
+          windows.element.innerHTML += '\t';
         }
         pressed[data.values] = true;
         onCombo({ ...pressed });
