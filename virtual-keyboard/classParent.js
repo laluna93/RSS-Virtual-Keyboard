@@ -5,7 +5,7 @@ export default class AbstractForm {
     parent.append(this.element);
   }
 
-  destroy() {
-    this.element.remove();
-  }
+  // destroy() {
+  //   this.element.remove();
+  // }
 }
