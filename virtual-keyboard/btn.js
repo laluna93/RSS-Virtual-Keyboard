@@ -80,13 +80,19 @@ export default function ruCreate(bts, currentLang, onCombo) {
     const { name, style } = checking(data, currentLang);
     const filter = (names) => {
       if (names === 'пробел' || names === 'space') {
-        return '';
+        return ' ';
       } if (names === 'Caps Lock' || names === 'CapsLock' || names === 'Shift' || names === 'Enter' || names === 'Backspace' || names === 'Tab') {
         return '';
       } if (names === 'Alt' || names === 'DEL' || names === 'Ctrl') {
         return '';
       }
       if (names === 'lang') {
+        return '';
+      }
+      if (names === 'Ctrl' || names === 'Win') {
+        return '';
+      }
+      if (name === 'Для переключения языка используйте комбинацию клавиш Shift + Alt или кнопку "lang"') {
         return '';
       }
       if (names === 'ArrowUp' || names === 'ArrowLeft' || names === 'ArrowRight' || names === 'ArrowDown') {
@@ -110,9 +116,9 @@ export default function ruCreate(bts, currentLang, onCombo) {
         if (data.values === 'Tab') {
           windows.element.innerHTML += '\t';
         }
-        if (data.values === 'ControlLeft' || data.values === 'ControlRight') {
-          windows.element.innerHTML = '';
-        }
+        // if (data.values === 'ControlLeft' || data.values === 'ControlRight') {
+        //   windows.element.innerHTML = '';
+        // }
         pressed[data.values] = true;
         onCombo({ ...pressed });
       },

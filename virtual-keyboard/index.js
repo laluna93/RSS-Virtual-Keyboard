@@ -31,7 +31,6 @@ function createKeys() {
         buttons.forEach((e) => {
           if (e.buttonInfo.type === 'input') {
             if (state.capslog) {
-              console.log(e.buttonInfo);
               e.element.textContent = e.element.textContent.toUpperCase();
             } else {
               e.element.textContent = e.element.textContent.toLowerCase();
