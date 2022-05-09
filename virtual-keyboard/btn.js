@@ -116,9 +116,6 @@ export default function ruCreate(bts, currentLang, onCombo) {
         if (data.values === 'Tab') {
           windows.element.innerHTML += '\t';
         }
-        // if (data.values === 'ControlLeft' || data.values === 'ControlRight') {
-        //   windows.element.innerHTML = '';
-        // }
         pressed[data.values] = true;
         onCombo({ ...pressed });
       },
