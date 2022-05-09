@@ -1,5 +1,4 @@
 import AbstractForm from './classParent.js';
-// import { containers } from './container.js';
 
 export default class WindowForm extends AbstractForm {
   constructor(parent, value = '') {
@@ -7,4 +6,3 @@ export default class WindowForm extends AbstractForm {
     this.element.innerHTML = value;
   }
 }
-// export const windows = new WindowForm(containers.element);

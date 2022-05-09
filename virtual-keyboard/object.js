@@ -510,24 +510,6 @@ export const bts = [
     values: 'Backslash',
   },
 
-  // {
-  //   type: 'noInput',
-  //   contentInput: '',
-  //   contents: {
-  //     ru: 'DEL',
-  //     en: 'DEL',
-  //   },
-  //   alts: {
-  //     ru: 'DEL',
-  //     en: 'DEL',
-  //   },
-  //   caps: {
-  //     ru: 'DEL',
-  //     en: 'DEL',
-  //   },
-  //   values: 'Delete',
-  // },
-
   {
     type: 'noInput',
     contentInput: '',
@@ -967,7 +949,6 @@ export const bts = [
 
   {
     type: 'input',
-    // contentInput: '',
     contents: {
       ru: '△',
       en: '△',
@@ -1035,7 +1016,6 @@ export const bts = [
       ru: 'Win',
       en: 'Win',
     },
-    // values:
   },
 
   {
@@ -1097,8 +1077,6 @@ export const bts = [
 
   {
     type: 'input',
-    // contentInput: '',
-
     contents: {
       ru: '◁',
       en: '◁',
@@ -1116,7 +1094,6 @@ export const bts = [
 
   {
     type: 'input',
-    // contentInput: '',
 
     contents: {
       ru: '▽',
@@ -1135,7 +1112,6 @@ export const bts = [
 
   {
     type: 'input',
-    // contentInput: '',
 
     contents: {
       ru: '▷',
@@ -1172,17 +1148,14 @@ export const bts = [
   },
 
   {
-    type: 'input',
-    contentInput: 'Для переключения языка используйте комбинацию клавиш Shift + Alt',
+    type: 'noInput',
+    contentInput: 'Для переключения языка используйте комбинацию клавиш Shift + Alt или кнопку "lang"',
 
     contents: {
-      ru: 'Для переключения языка используйте комбинацию клавиш Shift + Alt',
-      en: 'Для переключения языка используйте комбинацию клавиш Shift + Alt',
+      ru: 'Для переключения языка используйте комбинацию клавиш Shift + Alt или кнопку "lang"',
+      en: 'Для переключения языка используйте комбинацию клавиш Shift + Alt или кнопку "lang"',
     },
-    // alts: {
-    //   ru: 'Ctrl',
-    //   en: 'Ctrl',
-    // },
+
     values: 'text',
   },
 ];
