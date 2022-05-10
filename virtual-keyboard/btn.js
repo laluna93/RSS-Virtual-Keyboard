@@ -32,8 +32,9 @@ function createButton(code, caption, className, controller, buttonInfo) {
   };
   btn.onClick = (e) => {
     down(e);
-    up(e);
+    setTimeout(() => up(e), 350);
   };
+
   const kde = (e) => {
     if (e.code === code) {
       e.preventDefault();
